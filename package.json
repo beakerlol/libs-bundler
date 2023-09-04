@@ -1,0 +1,15 @@
+{
+  "name": "bsbundle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npx sass ./src/scss/bootstrap.scss ./dist/bootstrap.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "sass": "~1.64.2"
+  }
+}
