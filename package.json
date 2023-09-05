@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "npx sass ./src/scss/bootstrap.scss ./dist/bootstrap.css"
+    "bootstrap": "sass ./src/scss/bootstrap.scss ./dist/css/bootstrap.css",
+    "swiper-css": "sass ./src/scss/swiper.scss ./dist/css/swiper.css",
+    "swiper-js": "npx rollup -c rollup.config.swiper.mjs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-terser": "^0.4.3",
     "bootstrap": "^5.3.1",
-    "sass": "~1.64.2"
+    "rollup": "^3.28.1",
+    "sass": "~1.64.2",
+    "swiper": "^10.2.0"
   }
 }
