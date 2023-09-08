@@ -6,11 +6,13 @@ export default {
     output: [
         {
             file: "dist/js/swiper.js",
-            format: "es",
+            name: "swiperBundle",
+            format: "iife",
         },
         {
             file: "dist/js/swiper.min.js",
-            format: "es",
+            name: "swiperBundle",
+            format: "iife",
             plugins: [terser({ mangle: true })]
         }
     ],
